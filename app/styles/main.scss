@@ -176,9 +176,9 @@ $txt-general: 'Karla', 'sans-serif';
             }
         }
         .wrapper-img {
-            background: #f64c07;
-            border-left: solid 1px #fff;
-            border-bottom: solid 1px #fff;
+            background: #fff;
+            border-left: solid 1px #000;
+            border-bottom: solid 1px #000;
             width: 120px;
             position: absolute;
             right: 0;
@@ -348,13 +348,13 @@ $txt-general: 'Karla', 'sans-serif';
     .main-menu {
         padding: 10px 30px;
         .navbar-collapse {
-            @include breakpoint(sm) { 
+            @include breakpoint(md) { 
                 text-align: center; 
             }
             li {
                 &.mobile {
                     display: none;
-                    @include breakpoint(sm) { 
+                    @include breakpoint(md) { 
                         display: inline-block; 
                         border-bottom: 0; 
                     }
@@ -451,7 +451,6 @@ $txt-general: 'Karla', 'sans-serif';
         margin-bottom: 15px;
         margin-top: 10px;
         text-align: center;
-        background-color: #f64c07;
         color: #fff;
         @include breakpoint(xxs) { 
             margin-top: 150px;

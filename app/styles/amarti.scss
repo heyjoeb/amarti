@@ -61,17 +61,17 @@ body {
     	font-family: $txt-amarti;
     	font-weight: 400;
     	letter-spacing: 0.225em;
-        background: #cc3333;
+        background: #fff;
         text-transform: uppercase;
         font-size: $txt-m;
     	a {
-    		color: #fff;
+    		color: #000;
             &:hover {
-                color: #ff9999;
+                color: #a9a9a9;
             }
     	}
     	li {
-            @include breakpoint(sm) { 
+            @include breakpoint(md) { 
                 border-left: 0;  
                 border-bottom: solid 1px #cccccc;
                 text-align: center;  
@@ -83,36 +83,36 @@ body {
     }
     .navbar-toggle {
         .icon-bar {
-            background-color: #fff;
+            background-color: #000;
         }
     }
 
     /* footer */
     .main-footer {
-        background: #cc3333;
+        background: #fff;
         .zonak {
             p {
-                color: #ffcccc;
+                color: #000;
                 margin-bottom: 5px;
             }
             a {
-                color: #fff;
+                color: #000;
                 font-size: $txt-xs;
                 &:hover {
-                    color: #ff9999;
+                    color: #9a9a9a;
                 }
             }
         }
         .links {
             a {
-                color: #fff;
+                color: #000;
                 font-size: $txt-xs;
                 font-weight: 400;
                 letter-spacing: 0.225em;
                 text-transform: uppercase;
                 text-decoration: underline;
                 &:hover {
-                    color: #ffcccc;
+                    color: #9a9a9a;
                 }
             }
         }
@@ -123,7 +123,7 @@ body {
         .logo {
             p {
                 font-size: 0.929em;
-                color: #ffcccc;
+                color: #000;
             }
             margin-top: 15px;
         }
@@ -189,7 +189,7 @@ body {
 
     /* banner-daportare */
     .banner-daportare {
-        background-color: #f64c07;
+        background-color: #000;
         color: #fff;
         @include breakpoint(xxs) { 
             margin-top: 150px;
@@ -248,7 +248,7 @@ body {
         .wrapper-item {
             &:hover {
                 .item {
-                    background: url("../media/bg-red-amarti.png") repeat;
+                    background: url("../media/bg-hover-black.png") repeat;
                 }
             }
             
@@ -258,7 +258,7 @@ body {
 
     /* quotes */
     .quotes {
-        background-color: #cc3333;
+        background-color: #000;
         padding: 35px 50px;
         margin-bottom: 20px;
         .icon {
@@ -296,7 +296,7 @@ body {
                 text-transform: uppercase;
                 text-align: center;
                 letter-spacing: 0.125em;
-                background-color: #cc3333;
+                background-color: #000;
                 color: #fff;
                 font-size: 1em;
                 padding: 15px;
@@ -315,11 +315,11 @@ body {
         background-color: #fff;
         color: #666666;
         a {
-            color: #cc3333;
+            color: #000;
             text-decoration: underline;
             font-size: 1.186em;
             &:hover {
-                color: #a52525;
+                color: #696969;
             }
         }
         h3 {
@@ -333,7 +333,7 @@ body {
         }
         .form {
             #fecha {
-                background: url("../media/icon-date-red.png") no-repeat 95% center;
+                background: url("../media/icon-date-black.png") no-repeat 95% center;
             }
             input, select {
                 -webkit-border-radius: 0;
@@ -370,7 +370,7 @@ body {
                 height: 45px;
             }
             .customSelectInner {
-                background:url("../media/icon-select-red.png") no-repeat center right;
+                background:url("../media/icon-select-black.png") no-repeat center right;
                 width: 100% !important;
             }
         }
@@ -378,7 +378,7 @@ body {
             -webkit-border-radius: 0;
             -moz-border-radius: 0;
             border-radius: 0;
-            background-color: #cc3333;
+            background-color: #000;
             color: #fff;
             text-transform: uppercase;
             text-align: center;
@@ -387,7 +387,7 @@ body {
             letter-spacing: 0.125em;
             font-size: 0.857em;
             &:hover {
-                background-color: #a52525;
+                background-color: #3b3b3b;
             }
         }
 
@@ -403,14 +403,14 @@ body {
         /* slider categorías */
         .categories-menu {
             a {
-                background-color: #ffd4d4;
-                color: #cc3333;
+                background-color: #f0f0f0;
+                color: #000;
                 letter-spacing: 0.125em;
                 font-weight: 700;
                 text-transform: uppercase;
                 font-size: 0.857em;
                 &:hover {
-                    background-color: #cc3333;
+                    background-color: #000;
                     color: #fff;
                     text-decoration: none;
                 }
@@ -420,7 +420,7 @@ body {
                 }
             }
             .mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-                background-color: #cc3333;
+                background-color: #000;
             }
             .mCSB_scrollTools {
                 a {
