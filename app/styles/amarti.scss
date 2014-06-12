@@ -65,9 +65,9 @@ body {
         text-transform: uppercase;
         font-size: $txt-m;
     	a {
-    		color: #000;
+    		color: #8c6239;
             &:hover {
-                color: #a9a9a9;
+                color: #f4b97c;
             }
     	}
     	li {
@@ -92,27 +92,27 @@ body {
         background: #fff;
         .zonak {
             p {
-                color: #000;
+                color: #8c6239;
                 margin-bottom: 5px;
             }
             a {
-                color: #000;
+                color: #8c6239;
                 font-size: $txt-xs;
                 &:hover {
-                    color: #9a9a9a;
+                    color: #f4b97c;
                 }
             }
         }
         .links {
             a {
-                color: #000;
+                color: #8c6239;
                 font-size: $txt-xs;
                 font-weight: 400;
                 letter-spacing: 0.225em;
                 text-transform: uppercase;
                 text-decoration: underline;
                 &:hover {
-                    color: #9a9a9a;
+                    color: #f4b97c;
                 }
             }
         }
@@ -123,7 +123,7 @@ body {
         .logo {
             p {
                 font-size: 0.929em;
-                color: #000;
+                color: #8c6239;
             }
             margin-top: 15px;
         }
@@ -189,7 +189,7 @@ body {
 
     /* banner-daportare */
     .banner-daportare {
-        background-color: #000;
+        background-color: #8c6239;
         color: #fff;
         @include breakpoint(xxs) { 
             margin-top: 150px;
@@ -209,8 +209,8 @@ body {
     /* descripcion */
     .descripcion {
         background: #fff;
-        border: solid 1px #f2f2f2;
-        color: #666;
+        border: solid 1px #8c6239;
+        color: #8c6239;
         padding: 50px 30px;
         margin-bottom: 15px;
         text-align: center;
@@ -220,6 +220,7 @@ body {
         h1 {
             font-size: 2.571em;
             margin-top: 0;
+            color:  #1d1d1b;
         }
         h2 {
             font-weight: 400;
@@ -235,7 +236,7 @@ body {
             text-transform: uppercase;
             letter-spacing: 0.125em;
             a {
-                color: #333333;
+                color: #8c6239;
             }
         }
         .icon {
@@ -290,13 +291,13 @@ body {
     /* mapa */
     .mapa {
         background-color: #fcfafa;
-        color: #666;
+        color: #8c6239;
         .info {
             h2 {
                 text-transform: uppercase;
                 text-align: center;
                 letter-spacing: 0.125em;
-                background-color: #000;
+                background-color: #8c6239;
                 color: #fff;
                 font-size: 1em;
                 padding: 15px;
@@ -313,13 +314,13 @@ body {
     /* --- RESERVAS --- */
     .reservas {
         background-color: #fff;
-        color: #666666;
+        color: #1d1d1b;
         a {
-            color: #000;
+            color: #8c6239;
             text-decoration: underline;
             font-size: 1.186em;
             &:hover {
-                color: #696969;
+                color: #f4b97c;
             }
         }
         h3 {
@@ -329,7 +330,7 @@ body {
             text-transform: uppercase;
         }
         .txt-caption {
-            color: #999;
+            color: #8c6239;
         }
         .form {
             #fecha {
@@ -378,7 +379,7 @@ body {
             -webkit-border-radius: 0;
             -moz-border-radius: 0;
             border-radius: 0;
-            background-color: #000;
+            background-color: #8c6239;
             color: #fff;
             text-transform: uppercase;
             text-align: center;
@@ -387,7 +388,7 @@ body {
             letter-spacing: 0.125em;
             font-size: 0.857em;
             &:hover {
-                background-color: #3b3b3b;
+                background-color: #f4b97c;
             }
         }
 
@@ -403,14 +404,14 @@ body {
         /* slider categorías */
         .categories-menu {
             a {
-                background-color: #f0f0f0;
-                color: #000;
+                background-color: #fef4ea;
+                color: #8c6239;
                 letter-spacing: 0.125em;
                 font-weight: 700;
                 text-transform: uppercase;
                 font-size: 0.857em;
                 &:hover {
-                    background-color: #000;
+                    background-color: #8c6239;
                     color: #fff;
                     text-decoration: none;
                 }
@@ -420,7 +421,7 @@ body {
                 }
             }
             .mCS-dark-thick > .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-                background-color: #000;
+                background-color: #8c6239;
             }
             .mCSB_scrollTools {
                 a {
@@ -442,16 +443,16 @@ body {
                 }
             }
             .name {
-                color: #333;
+                color: #1d1d1b;
                 font-weight: 700;
                 font-size: 1.429em;
             }
             .info {
-                color: #666;
+                color: #8c6239;
                 font-size: 1.071em;
             }
             .price {
-                color: #333;
+                color: #1d1d1b;
                 font-weight: 700;
                 letter-spacing: 0.125em;
             }
@@ -461,7 +462,16 @@ body {
 
         
     }
-    
+    .mCSB_scrollTools .mCSB_buttonUp,
+    .mCSB_scrollTools .mCSB_buttonDown,
+    .mCSB_scrollTools .mCSB_buttonLeft,
+    .mCSB_scrollTools .mCSB_buttonRight{
+        background-image:url(../media/mCSB_buttons.png);
+        background-repeat:no-repeat;
+        opacity:0.4;
+        filter:"alpha(opacity=40)"; -ms-filter:"alpha(opacity=40)"; /* old ie */
+    }
+        
 }
 
 
