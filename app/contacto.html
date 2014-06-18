@@ -7,11 +7,23 @@
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="styles/main.css"/>
-        <link rel="stylesheet" href="styles/amarti.css"/>
-        <link rel="stylesheet" href="styles/vendor.css"/>
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/amarti.css -->
+        <link rel="stylesheet" href="styles/amarti.css">
+        <!-- endbuild -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" />
+        <link rel="stylesheet" href="../bower_components/bootstrap-datepicker/css/datepicker3.css" />
+        <link rel="stylesheet" href="../bower_components/fancybox/source/jquery.fancybox.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
         
-        <script src="scripts/vendor/modernizr.js"></script>
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
 
         <!-- google webfont -->
         <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
@@ -171,7 +183,7 @@
                     <div class="row">
                         <div class="col-md-12 txt">
                             <h1>
-                                Reservas
+                                Contacto
                             </h1>
                             <h2>
                                 Frase destacada Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, expedita.
@@ -183,8 +195,8 @@
 
 
 
-                <!-- RESERVAS -->
-                <div class="container reservas">
+                <!-- CONTACTO -->
+                <div class="container contacto">
                     <div class="row">
                         <div class="col-sm-6 col-md-6 form">
                             <div class="col-md-12">
@@ -192,66 +204,6 @@
                             </div>
                            
                            <form role="form">
-
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="col-sm-6 col-md-6 wrapper-tipo">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="tipo-evento">Tipo de evento que quieres realizar</label>
-                                            <select class="form-control" id="tipo-evento">
-                                              <option disabled selected>Tipo de evento que quieres realizar</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                            </select>
-                            
-                                        </div>
-                                    </div>
-
-                                     <div class="col-sm-6 col-md-6 wrapper-fecha">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="fecha">Fecha del evento</label>
-                                            <input type="text" data-provide="datepicker" class="form-control" id="fecha" placeholder="Fecha del evento">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="col-sm-6 col-md-6 wrapper-jornada">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="jornada">Jornada</label>
-                                            <select class="form-control" id="jornada">
-                                              <option disabled selected>Jornada</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                            </select>
-                            
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-6 col-md-6 wrapper-hora">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="hora">Hora</label>
-                                            <select class="form-control" id="hora">
-                                              <option disabled selected>Hora</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                              <option>Lorem ipsum.</option>
-                                            </select>
-                            
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-
                                 <div class="col-sm-12 col-md-12">
                                     <div class="col-sm-6 col-md-6 wrapper-nombres">
                                         <div class="form-group">
@@ -268,22 +220,46 @@
 
                                 </div>
 
-
-
                                 <div class="col-sm-12 col-md-12 form-group">
                                     <label class="sr-only" for="correo">Correo Electrónico</label>
                                     <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico">
                                 </div>
 
-                                <div class="col-sm-12 col-md-12 form-group">
-                                    <label class="sr-only" for="telefono">Teléfono fijo o móvil</label>
-                                    <input type="tel" class="form-control" id="telefono" placeholder="Teléfono fijo o móvil">
+
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="col-sm-6 col-md-6 wrapper-telefono">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="telefono">Teléfono fijo o móvil</label>
+                                            <input type="tel" class="form-control" id="telefono" placeholder="Teléfono fijo o móvil">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 wrapper-ciudad">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="ciudad">Ciudad</label>
+                                            <select class="form-control" id="ciudad">
+                                              <option disabled selected>Ciudad</option>
+                                              <option>Lorem ipsum.</option>
+                                              <option>Lorem ipsum.</option>
+                                              <option>Lorem ipsum.</option>
+                                              <option>Lorem ipsum.</option>
+                                              <option>Lorem ipsum.</option>
+                                            </select>
+                            
+                                        </div>
+                                    </div>
                                 </div>
 
-                                  
+                                
+
+                                <div class="col-sm-12 col-md-12 form-group">
+                                    <label class="sr-only" for="asunto">Asunto</label>
+                                    <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                                </div>
+
+
                                 <div class="col-sm-12 col-md-12">
-                                    <label class="sr-only" for="comentarios">Comentarios</label>
-                                    <textarea class="col-md-12 form-control" id="comentarios" placeholder="Comentarios"></textarea>
+                                    <label class="sr-only" for="mensaje">Mensaje</label>
+                                    <textarea class="col-md-12 form-control" id="mensaje" placeholder="Mensaje"></textarea>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 checkbox">
@@ -321,42 +297,6 @@
                             </div>
 
 
-                            <div class="col-sm-12 col-md-12 info-pedidos">
-                                <h3>Pedidos a domicilio</h3>
-                                <div class="col-sm-12 col-md-6 links">
-                                    <div class="numero">
-                                        <a href="(571)2444678">(57-1) 244 4678</a>
-                                    </div>
-                                    <div class="link">
-                                        <a href="">www.daportare.com.co</a>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-12 col-md-6 logo">
-                                    <img src="./media/logo-blanco-daportare.jpg" alt="">
-                                </div>
-                            </div><!--/.pedidos -->
-
-                            <div class="col-sm-12 col-md-12 info-reservas">
-                                <h3>Reservas</h3>
-                                <div class="numero">
-                                    <a href="(571)2444678">(57-1) 244 4678</a>
-                                </div>
-                                <div class="link">
-                                    <a href="">reservasamarti@zonak.com.co</a>
-                                </div>
-                            </div><!--/.reservas -->
-
-                            <div class="col-sm-12 col-md-12 info-eventos">
-                                <h3>Eventos & catering</h3>
-                                <div class="numero">
-                                    <a href="(571)2444678">(57-1) 244 4678</a>
-                                </div>
-                                <div class="link">
-                                    <a href="">www.daportare.com.co</a>
-                                </div>
-                            </div><!--/.eventos -->
-
                             <div class="col-sm-12 col-md-12 info-servicio-cliente">
                                 <h3>Servicio al Cliente</h3>
                                 <div class="numero">
@@ -374,7 +314,7 @@
                         </div><!--/.info -->
                     </div><!--/.row -->
                 </div>
-                <!-- /RESERVAS -->
+                <!-- /CONTACTO -->
 
 
 
@@ -465,7 +405,19 @@
        
 
 
-        <script src="scripts/vendor.js"></script>
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/fitvids/jquery.fitvids.js"></script>
+        <script src="../bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+        <script src="../bower_components/jquery.customSelect/jquery.customSelect.min.js"></script>
+        <script src="../bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+        <script src="../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+        <script src="../bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -477,8 +429,23 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
-        <script src="scripts/plugins.js"></script>
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
 
+        <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
